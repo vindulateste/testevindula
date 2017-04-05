@@ -1,4 +1,4 @@
-# Teste para prático - Web Design>
+# Teste para prático - Web Design
 > Essa prova consiste em testar os conhecimentos do candidato nas tecnologias <b>HTML, CSS, JS, SQL</b> entre outras coisas. <br>
 
 ## Instruções:
