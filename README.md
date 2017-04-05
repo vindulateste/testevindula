@@ -1,6 +1,4 @@
-# Teste para prático - Web Design
-> [![Logo vindula](http://vindula.com.br/vindula/++theme++vindula.site/img/Vindula_tela.jpg)](http://vindula.com.br/)
->
+# Teste para prático - Web Design>
 > Essa prova consiste em testar os conhecimentos do candidato nas tecnologias <b>HTML, CSS, JS, SQL</b> entre outras coisas. <br>
 
 ## Instruções:
