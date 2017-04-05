@@ -1,15 +1,14 @@
-# Teste para prático à vaga de Web Design
+# Teste para prático - Web Design
 > [![Logo vindula](http://vindula.com.br/vindula/++theme++vindula.site/img/Vindula_tela.jpg)](http://vindula.com.br/)
 >
-> Essa prova consiste em testar os conhecimentos do candidato nas tecnologias <b>HTML, CSS, JavaScript, SQL</b> entre outras coisas. <br>
-> O conjunto de interfaces disponibilizado leva em média <b>6 horas</b> para ser implementado;
+> Essa prova consiste em testar os conhecimentos do candidato nas tecnologias <b>HTML, CSS, JS, SQL</b> entre outras coisas. <br>
 
 ## Instruções:
 
 1. Faça um fork deste repositório;
 2. Estude o modelo de processo <i>Processo_Teste_Front.png</i>;
 3. Estude os requisitos para elaboração do formulário e das métricas;
-3. Implemente o HTML/CSS das telas com base no layout disponível;
+3. Implemente o HTML/CSS das telas com base no layout disponível (http://5qcl77.axshare.com);
 4. Para a interação das interfaces utilize preferencialmente jQuery;
 5. Após terminar seu teste submeta um pull request e aguarde seu feedback.
 
@@ -46,7 +45,6 @@
 
 * Todos os layouts necessários estão disponíveis na pasta raíz;
 * Modelo do processo de negócio disponível com o nome <i>Processo_Teste_Front.png</i> na pasta raíz;
-* Para consultas acerca da BPM acesse o Activiti User Guide: http://www.activiti.org/userguide/#bpmnConstructs.
 * Utilize o webservice de consulta de CEP's: https://viacep.com.br/
 * Modelo do banco de dados relacional pode ser encontrado em <i>modelo_relacional.png</i> na pasta raíz;
 * Biblioteca para criação de querys MySQL via JavaScript com o nome <i>mysql_lib.js</i> na pasta raíz;
@@ -54,7 +52,7 @@
 ## Especificação
 * Deve ser desenvolvido um conjunto de interfaces (formulário e métricas) para a automação do processo de 'Shipment of a hardware retailer';
 * Use a criatividade para preencher os espaços em branco nos arquivos fornecidos;
-* Para tal, implemente o HTML/CSS/JS do formulário associado a tarefa <i>'Check if extra insurance is necessary'</i> (arquivo: <i>task.psd</i>) com os seguintes campos:
+* Para tal, implemente o HTML/CSS/JS do formulário associado a tarefa (Iniciar Tarefa) <i>'Check if extra insurance is necessary'</i> 
   * <b>Dados do Pedido</b> (Devem existir 4 materiais, de sua escolha, vinculados ao pedido do teste):
     * Número de Pedido;
     * Material;
@@ -86,7 +84,7 @@
     * Total do pedido ((preço dos insumos x quantidades) + (preço do material x quantidades));
   * <b>Busca</b>:
     * Deve ser permitido inserir um numero de pedido e após a consulta, preencher automaticamente todos os campos do formulário;
-* Implemente o HTML/CSS/JS do dashboard com os seguintes gráficos e tabelas (arquivo: <i>dashboard.psd</i>):
+* Implemente o HTML/CSS/JS do com os seguintes gráficos e tabelas
   * [GRÁFICO] - Quantidade de pedidos por dia;
   * [GRÁFICO] - Pedidos por solicitante;
   * [TABELA] - Pedidos pendentes;
