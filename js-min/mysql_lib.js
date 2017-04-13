@@ -1,7 +1,7 @@
 function mysqlQuery(sql_string, callback){
-	// Enviar uma consulta mysql e uma função de retorno de chamada para obter essa resposta
-	// O resultado como uma matriz de objetos como [{ result1, result2}]
-	// Você tem apenas permissão para 'SELECT' on database :D
+	// send a mysql query and a callback function to get this response
+	// the result as a array of objects like [{ result1, result2}]
+	// you have only permission to 'SELECT' on database :D
 
 	if(typeof sql_string == "string"){
 		var api_host = "http://192.241.152.185/";

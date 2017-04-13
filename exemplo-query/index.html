@@ -16,13 +16,16 @@
 </head>
 <body>
 	
-	<h3>Solicitantes</h3>
+	<h2>Cálculos</h2>
 	<table>
 		<thead>
 			<tr>
-				<th>ID</th>
-				<th>Nome</th>
-				<th>Telefone</th>
+				<th>Preço</th>
+				<th>Quantidade</th>
+				<th>Preço</th>
+				<th>quantidade</th>
+				<th>Total</th>
+				
 			</tr>
 		</thead>
 		<tbody id="conteudo">
@@ -30,28 +33,38 @@
 		</tbody>
 	</table>
 
-	<script src="mysql_lib.js"></script>
+	
 	<script>
 		window.onload = function(){
 
-			var mysql_query = "SELECT * FROM solicitantes ORDER BY nome ASC";
+			var codigo = 2;
+			var mysql_query = "SELECT m.id_pedido, m.preco As m_preco, m.quantidade As m_quant, i.preco As i_preco, i.quantidade As i_quant, ((m.preco * m.quantidade) + (i.preco * i.quantidade)) As total FROM materiais As m JOIN insumos As i ON m.id = i.id_material";
+			//SELECT id_solicitante, data_de_compra, COUNT(*) AS res FROM pedidos GROUP BY data_de_compra
+			//SELECT id As solicitante, COUNT(id) AS res FROM pedidos GROUP BY id_solicitante
+			//Cálculo - "SELECT m.preco As m_preco, m.quantidade As m_quant, i.preco As i_preco, i.quantidade As i_quant, ((m.preco * m.quantidade) + (i.preco * i.quantidade)) As total FROM materiais As m JOIN insumos As i ON m.id = i.id";
+	
+					mysqlQuery(mysql_query, function(result){ 
+						// mostra o resultado da query
+						var obj = JSON.parse(result);
+						var table_body =  document.getElementById("conteudo");
 
-		  	mysqlQuery(mysql_query, function(result){
-		    	// mostra o resultado da query
-		    	var obj = JSON.parse(result);
-		    	var table_body =  document.getElementById("conteudo");
-
-			    obj.forEach(function(el){
-			    	var html_body = "<tr>"+
-										"<td>"+el.id+"</td>"+
-										"<td>"+el.nome+"</td>"+
-										"<td>"+el.telefone+"</td>"+
-									"</tr>";
-					table_body.innerHTML += html_body;
-			    });
-
-		  	});
-		};
+						obj.forEach(function(el){
+							var html_body = "<tr>"+
+							                    "<td>"+el.id_pedido+"</td>"+
+												"<td>"+el.m_preco+"</td>"+
+												"<td>"+el.m_quant+"</td>"+	
+												"<td>"+el.i_preco+"</td>"+
+												"<td>"+el.i_quant+"</td>"+	
+												"<td>"+el.total+"</td>"+
+											"</tr>";
+							table_body.innerHTML += html_body;
+							
+						});
+						console.log(obj);
+					});
+				};
 	</script>
+
+	<script src="mysql_lib.js"></script>
 </body>
 </html>
