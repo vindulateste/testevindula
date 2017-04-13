@@ -1,0 +1,305 @@
+/*CONTAINER*/
+.container{float: left; width: 100%;}
+.content{width: 90%; margin: 0 5%; padding: 10px 0;}
+
+/*HEADER*/
+.main_header .content{
+    height: 106px;
+    padding: 0 0;
+}
+
+/*Efeitos controlado via jQuery*/
+.main_header_fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.main_logo{
+    width: 35px;
+    height: 35px;  
+    margin: 10px 100px 0 2px;
+}
+
+.main_menu{
+    float: left;
+    margin-top: 15px;
+}
+
+.main_menu li{
+    display: inline-block;
+}
+
+.main_menu a{
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 12px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-family: Myriad Pro, sans-serif;
+}
+
+.main_menu a:hover{
+    color: #39BA9C;
+}
+
+.processo{
+    float: left;
+    padding: 23px 30px 22px 30px;
+    margin-left: 150px;
+    font-size: 0.8em;
+    font-weight: 600;
+    font-family: Myriad Pro, sans-serif;
+    background-color: #39BA9C;
+    background-image: url(../icon/play-icon.png);
+    background-repeat: no-repeat;
+    background-size: auto 25%;
+    background-position: left 10px top 21px;
+    color: #fff;
+}
+
+.processo:hover{
+    background-color: #1BA39C;
+}
+
+.main_header_icon{
+    float: right;
+    width: 17px;
+    height: 15px;
+    margin: 23px 15px 0 0;
+}
+
+.main_header_icon.mike{
+    width: 30px;
+    height: 30px;
+    margin: 15px 15px 0 0;
+}
+
+.main_header_icon.copy{
+    width: 10px;
+    height: 10px;
+    margin: 25px 0 0 0;
+}
+
+.main_header_icon.tarefa{
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 0 8px 0 0;
+}
+
+.dashboard{
+    font-family: Trebuchet MS, sans-serif;
+    padding: 10px 15px 0 0;
+}
+
+.dashboard span{
+    padding-right: 30px;
+    color: #656565;
+    font-size: 0.875em;
+    font-weight: 600;
+}
+
+.dashboard span:hover{
+    color: #39BA9C;
+}
+
+/*MAIN*/
+/*DESTAQUE*/
+.main_destaque{
+    background-color: #000;
+    height: 500px;
+    background-image: url(../img/imagen-hardware.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    color: #fff;
+}
+.main_destaque header{
+    float: left;
+    width: 100%;
+    padding-right: 10%;
+}
+
+.main_destaque header h1{
+    margin: 50px 0 0 50px;
+}
+
+.main_destaque .tagline{
+    margin: 35px 0;
+}
+
+/*TEC HARDWARE CARACTERISTICAS*/
+.main_tec_item{
+    padding: 15px 30px; 
+    margin-bottom: 30px; 
+    min-height: 380px;
+}
+.main_tec_item:hover{
+    background: #0F3E84; color: #FFF; 
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3); 
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3); 
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+}
+.main_tec_item:nth-child(2):hover{
+    background: #0D6E32; color: #FFF; 
+}
+.main_tec_item:nth-child(3):hover{
+    background: #B3B4B6; color: #FFF; 
+}
+.main_tec_item:nth-child(4):hover{
+    background: #939F95; color: #FFF; 
+}
+
+.main_tec_item img{
+    padding: 5px; 
+    width: 80%; 
+    margin: 0 10%; 
+    margin: 0 10%; 
+    background: #eee; 
+    -webkit-border-radius: 50%; 
+    -moz-border-radius: 50%; 
+    border-radius: 50%; 
+    margin-bottom: 15px;
+}
+.main_tec_item h1{
+    font-size: 1.5em; 
+    margin-bottom: 15px;
+}
+.main_tec_item .tagline{
+    font-size: 0.9em;
+}
+
+/*FORM SOLICTANTES*/
+.register{
+    display: none; 
+    width: 100%; 
+    max-width: 700px; 
+    border: 15px solid rgba(92, 151, 191, 0.9); 
+    margin: 50px 25%; 
+    padding: 20px; 
+    background: #eee;
+}
+.register header{
+    margin-bottom: 20px; 
+    text-align: left; 
+    padding-bottom: 20px; 
+    border-bottom: 2px solid #ccc;
+}
+
+.register header p{
+    margin: 5px 0 10px 0;
+}
+.openform{
+    float: right; 
+    background: #80b25c; 
+    display: inline-block; 
+    font-size: 1.2em; 
+    margin-left: 10px; 
+    border: 2px solid #fff; 
+    outline: 2px solid #80b25c; 
+    padding: 5px 10px; 
+    cursor: pointer; color: #fff; 
+    text-transform: uppercase; 
+    margin-top: 10px;  
+}
+
+.openform:hover{
+    background-color: #00B16A; 
+    outline: 2px solid #00B16A; 
+}
+
+.openform:before{
+    content: '+';
+}
+.openform.closeform{
+    background-color: #b25c5c; 
+    outline-color: #b25c5c; 
+    padding: 5px 12.5px;
+}
+
+.openform.closeform:hover{
+    background-color: #D91E18;
+    outline-color: #D91E18;
+}
+.openform.closeform:before{
+    content: '-';
+}
+.register form{
+    display: none; 
+    margin-bottom: 30px;
+}
+.register input{
+    width: 100%; 
+    padding: 11px; 
+    margin-bottom: 10px;
+}
+.register input[type = number]{
+    width: 89%;
+    padding: 11px; 
+}
+.register input[type = submit]{
+    width: 10%;
+    padding: 11px 10px; 
+    background: #eee;
+    background-image: url(../icon/search-icon.png);
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.register input[type = submit]:hover{
+    background-color: #b4e4b9;
+}
+.register label{
+    display: none;
+}
+.register .buscar{
+    float: right;
+    background: #09f; 
+    border: 2px solid #fff; 
+    outline: 2px solid #09f; 
+    padding: 9px; 
+    cursor: pointer; 
+    color: #fff; 
+    margin: 10px 10px 0 0;
+    display: none;
+    
+}
+.register .buscar:hover{
+    background: #4183D7; 
+    outline: 2px solid #4183D7; 
+}
+
+.form_load{
+    display: none; 
+    vertical-align: middle; 
+    margin-top: -2px;
+    width: 50px;
+    height: 30px;
+}
+
+/*FOOTER*/
+.main_footer{
+    height: 45px;
+}
+
+.main_footer .content{
+    padding: 0;
+}
+
+.main_footer p{
+    float: left;
+    font-size: 0.875em;
+    margin-top: 13px;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.main_footer img{
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin-top: 14px;
+}
