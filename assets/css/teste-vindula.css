@@ -1,0 +1,46 @@
+.img-logo{
+    width:100%;
+    height:560px;
+}
+
+#icon {
+font-size:x-large;
+color:#fff;
+}
+
+#nav-proc {
+  margin-top:-8px;
+  margin-bottom:-8px;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  background-color:rgba(72, 187, 158, 1);
+  border-width:1px;
+  border-style:solid;
+  border-color:rgba(121, 121, 121, 1);
+  box-shadow:none;
+  color:#fff;
+}
+
+#nav-pesq {
+  padding-left: 7px;
+  margin-top:4px;
+  width:200px;
+  height:30px;
+  background-color:#A9A9A9;
+  box-sizing:border-box;
+  border-width:1px;
+  border-style:solid;
+  border-color:#A9A9A9;
+  border-radius:10px;
+  box-shadow:none;
+
+}
+.submit-lente {
+  position:absolute;
+  padding-top: 5px;
+  padding-left: 8px;
+  top:0; right:1;
+  border:none;
+  background:transparent;
+  outline:none;
+}
